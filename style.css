@@ -1,0 +1,121 @@
+:root {
+  --background-color-primary: white;
+  --font-color-primary: #3B120F;
+  --font-color-seconday: #cca98a;
+  --font-color-tertiary: #e36f31;
+  --font-color-link-hover: #3B120F88;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color-primary);
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  height: 100vh;
+  background: center/cover no-repeat url(breka-hero.jpg);
+}
+
+.menu-wrapper {
+  background: var(--background-color-primary);
+  padding: 24px 80px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 320px;
+}
+
+.menu-options-wrapper {
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.menu-option {
+  padding-left: 32px;
+}
+
+.menu-option a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--font-color-primary);
+}
+
+.menu-option a:hover {
+  color: var(--font-color-link-hover);
+}
+
+.menu-option-selected a {
+  color: var(--font-color-link-tertiary)
+}
+
+.hero-title {
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  color: var(--font-color-seconday);
+  margin: 72px 0 0 72px;
+  font-weight: 300;
+}
+
+.section-heading {
+  color: var(--font-color-tertiary);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.section-content-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+
+.link-button {
+  background: var(--font-color-seconday);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.section-content-full {
+  text-align: center;
+}
+
+.content-divider {
+  height: 65vh;
+  background: center/cover no-repeat url(divider.png);
+}
+
+.link-button-outlined {
+  border: 2px solid var(--font-color-tertiary);
+}
+
+.section-content-grid {
+  margin: 0 80px;
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: center;
+}
+
+.section-content-item {
+  width: 33%;
+  padding: 0 32px;
+}
